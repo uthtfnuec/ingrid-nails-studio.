@@ -1,1 +1,91 @@
+
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fce4ec">
+
+    <title>Ingrid Nails Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Ingrid Nails Studio</h1>
+        <p>Beleza, delicadeza e cuidado em cada detalhe.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#agendamento">Agendamento</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Suas unhas merecem esse cuidado!</h2>
+            <p>
+                Realce sua beleza com unhas lindas e bem cuidadas.
+                Agende seu horário com a Ingrid.
+            </p>
+            <a href="#agendamento" class="botao">
+                Agendar horário
+            </a>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos serviços</h2>
+            <div id="lista-servicos"></div>
+        </section>
+
+        <section id="agendamento">
+            <h2>Agende seu horário</h2>
+
+            <form id="form-agendamento">
+                <label>Seu nome</label>
+                <input type="text" id="nome" required>
+
+                <label>Seu telefone</label>
+                <input type="tel" id="telefone" required>
+
+                <label>Serviço desejado</label>
+                <select id="servico" required>
+                    <option value="">Escolha um serviço</option>
+                </select>
+
+                <label>Data desejada</label>
+                <input type="date" id="data" required>
+
+                <label>Horário desejado</label>
+                <input type="time" id="horario" min="08:00" max="17:00" required>
+
+                <button type="submit" class="botao">
+                    Solicitar agendamento
+                </button>
+            </form>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em contato</h2>
+            <p>📍 Canoas - Rio Grande do Sul</p>
+            <p>🕒 Todos os dias, das 08h às 17h</p>
+            <p>💅 Atendimento somente no estúdio</p>
+            <p>Valores sob consulta pelo WhatsApp.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Ingrid Nails Studio</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
